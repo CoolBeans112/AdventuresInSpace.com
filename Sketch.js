@@ -1,14 +1,19 @@
 let s;
 let lasers = [];
 let stars = [];
+let asteroid = []
 function setup() {
 let clientHeight = document.getElementById('asteroids').clientHeight;
 let clientWidth = document.getElementById('asteroids').clientWidth;
 let c = createCanvas(clientWidth,clientHeight );
 c.parent('asteroids')
+  
+for(let i = 0; i< 25; i++){
+asteroids.push(createVector(random(width),random(height)));
+}
 
 for(let i = 0; i< 55; i++){
-stars.push(createVector(random(width),random(height)));
+stars.push(new Asteroid());
 }
 s = new Ship ();
 }
