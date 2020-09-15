@@ -1,7 +1,7 @@
 let s;
 let lasers = [];
 let stars = [];
-let asteroid = []
+let asteroids = []
 function setup() {
 let clientHeight = document.getElementById('asteroids').clientHeight;
 let clientWidth = document.getElementById('asteroids').clientWidth;
