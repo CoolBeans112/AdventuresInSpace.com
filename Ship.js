@@ -1,7 +1,7 @@
 function Ship(){
   this.pos = createVector(width/2,height/2);
   this.vel = createVector(0,0);
-  this.l=10
+  this.l=10;
   this.dir = 0;
   this.rot = 0;
   this.is_boosting = false;
@@ -20,7 +20,7 @@ function Ship(){
   this.vel.mult(0.97);
 }
 this.turn = function() {
-this.dir += this.rot
+this.dir += this.rot;
 
 }
 this.edge_loop =function(){
