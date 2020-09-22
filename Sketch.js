@@ -9,11 +9,11 @@ let c = createCanvas(clientWidth,clientHeight );
 c.parent('asteroids')
   
 for(let i = 0; i< 25; i++){
-asteroids.push(createVector(random(width),random(height)));
+asteroids.push(new Asteroid());
 }
 
 for(let i = 0; i< 55; i++){
-stars.push(new Asteroid());
+stars.push(createVector(random(width),random(height)));
 }
 s = new Ship ();
 }
