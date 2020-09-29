@@ -34,7 +34,7 @@ this.edge_loop =function(){
     this.pos.y = -this.l ;
   }
 els  if (this.pos.y <  -this.l) {
-    this.pos.y = heght +this.l ;
+    this.pos.y = height +this.l ;
   }
 }
 this.show = function() {
