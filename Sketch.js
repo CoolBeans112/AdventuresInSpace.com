@@ -36,7 +36,7 @@ for (let i =0; i <lasers.length; i++){
   lasers[i].show();
 for (let JITWT =0; JITWT <asteroids.length; JITWT++ ){
   
-  if (lasers[i].hits(asteroid[JITWT])){
+  if (lasers[i].hits(asteroids[JITWT])){
   delete asteroids[JITWT];
   delete lasers [i];
   }
