@@ -33,7 +33,7 @@ this.edge_loop =function(){
   if (this.pos.y > height+ this.l) {
     this.pos.y = -this.l ;
   }
-els  if (this.pos.y <  -this.l) {
+else  if (this.pos.y <  -this.l) {
     this.pos.y = height +this.l ;
   }
 }
