@@ -7,16 +7,16 @@ this.pos.add(this.vel);
 }
   this.edge_loop =function(){
   if (this.pos.x > width+ this.l) {
-    this.pos.x = -this.l ;
+    this.pos.x = -this.r ;
   }
   else if (this.pos.x < -this.l) {
-    this.pos.x = width + this.l ;
+    this.pos.x = width + this.r ;
   }
   if (this.pos.y > height+ this.l) {
-    this.pos.y = -this.l ;
+    this.pos.y = -this.r ;
   }
   else  if (this.pos.y <  -this.l) {
-    this.pos.y = heght +this.l ;
+    this.pos.y = heght +this.r ;
   }
 }
 this.show = function() {
