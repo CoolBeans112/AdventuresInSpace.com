@@ -29,6 +29,7 @@ function draw() {
   for (let i =0; i <asteroids.length; i++){
   asteroids[i].move();
   asteroids[i].show();
+  asteroids[i].edge_loop();
 }
 for (let i =0; i <lasers.length; i++){
   lasers[i].update();
