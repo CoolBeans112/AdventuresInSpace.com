@@ -41,7 +41,7 @@ for (let JITWT =0; JITWT <asteroids.length; JITWT++ ){
   delete lasers [i];
   }
 }
-
+}
 }
 function keyPressed() {
 if(key == 'w') {
