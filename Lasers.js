@@ -5,22 +5,16 @@ function Laser(ship) {
   this.r = 10;
   this.update = function()  {
     this.pos.add(this.vel);
-
   }
-  this.edge_loop =function(){
-    if (this.pos.x > width+ this.r) {
-      this.pos.x = -this.l ;
-    }
-    else if (this.pos.x < -this.r) {
-      this.pos.x = width + this.l ;
-    }
-    if (this.pos.y > height+ this.r) {
-      this.pos.y = -this.l ;
-    }
-  else  if (this.pos.y <  -this.r) {
-      this.pos.y = height +this.l ;
-    }
+this.hits = function(asteroid) {
+  let d = dist(this.pos.x,this.pos.y,asteroid.pos.x,asteroid.pos.y);
+  if (d < asteroid.r){
+  return true;
   }
+  else{
+    return false;
+  }
+}
   this.show = function() {
     push();
     noStroke();
