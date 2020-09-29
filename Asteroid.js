@@ -6,17 +6,17 @@ this.move = function() {
 this.pos.add(this.vel);
 }
   this.edge_loop =function(){
-  if (this.pos.x > width+ this.l) {
+  if (this.pos.x > width+ this.r) {
     this.pos.x = -this.r ;
   }
-  else if (this.pos.x < -this.l) {
+  else if (this.pos.x < -this.r) {
     this.pos.x = width + this.r ;
   }
-  if (this.pos.y > height+ this.l) {
+  if (this.pos.y > height+ this.r) {
     this.pos.y = -this.r ;
   }
-  else  if (this.pos.y <  -this.l) {
-    this.pos.y = heght +this.r ;
+  else  if (this.pos.y <  -this.r) {
+    this.pos.y = height +this.r ;
   }
 }
 this.show = function() {
