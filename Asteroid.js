@@ -22,4 +22,9 @@ this.pos.add(this.vel);
 this.show = function() {
 ellipse(this.pos.x,this.pos.y, this.r, this.r)
 }
+  this.hits = function(asteroid) {
+  let d = dist(this.pos.x,this.pos.y,asteroid.pos.x,asteroid.pos.y);
+  if (d < asteroid.r){
+  return true;
+  }
 }
