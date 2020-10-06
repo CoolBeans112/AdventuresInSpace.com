@@ -30,7 +30,7 @@ function draw() {
   asteroids[i].move();
   asteroids[i].show();
   asteroids[i].edge_loop();
- if (asteroids[i].hits(ship)) {
+ if (asteroids[i].hits(s)) {
  noLoop();
  }
   }
