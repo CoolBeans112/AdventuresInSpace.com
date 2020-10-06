@@ -31,10 +31,10 @@ function draw() {
   asteroids[i].show();
   asteroids[i].edge_loop();
 }
-for (let i =0; i <lasers.length; i++){
+for (let iu = lasers.length-1; i>=0;i--){
   lasers[i].update();
   lasers[i].show();
-for (let JITWT =0; JITWT <asteroids.length; JITWT++ ){
+for (let j = asteroids.length-1; j >= 0; j--){
   
   if (lasers[i].hits(asteroids[JITWT])){
   delete asteroids[JITWT];
