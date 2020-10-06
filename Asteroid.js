@@ -28,3 +28,4 @@ ellipse(this.pos.x,this.pos.y, this.r, this.r)
   return true;
   }
 }
+}
