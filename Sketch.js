@@ -38,7 +38,7 @@ for (let j = asteroids.length-1; j >= 0; j--){
   
   if (lasers[i].hits(asteroids[JITWT])){
     asteroids.splice(j, 1);
-    lasers.splice(j, 1);
+    lasers.splice(i, 1);
     break;
   }
 }
