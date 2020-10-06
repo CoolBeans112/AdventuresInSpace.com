@@ -24,7 +24,7 @@ ellipse(this.pos.x,this.pos.y, this.r, this.r)
 }
   this.hits = function(asteroid) {
   let d = dist(this.pos.x,this.pos.y,asteroid.pos.x,asteroid.pos.y);
-  if (d < this      .r){
+  if (d < this.r){
   return true;
   }
 }
