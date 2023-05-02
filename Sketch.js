@@ -8,7 +8,7 @@ let clientWidth = document.getElementById('asteroids').clientWidth;
 let c = createCanvas(clientWidth,clientHeight );
 c.parent('asteroids')
   
-for(let i = 0; i< 50000; i++){
+for(let i = 0; i< 500; i++){
 asteroids.push(new Asteroid());
 }
 
