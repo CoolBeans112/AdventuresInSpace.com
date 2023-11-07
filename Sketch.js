@@ -52,6 +52,7 @@ function draw() {
     }
   } else if (state == "dead") {
     background(0);
+    fill(255);
     text("You died", width/2, height/2);
     
   }
