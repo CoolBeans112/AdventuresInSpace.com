@@ -2,7 +2,7 @@ let s;
 let lasers = [];
 let stars = [];
 let asteroids = [];
-
+let restartBtn;
 let state = "game";
 
 function setup() {
@@ -19,6 +19,7 @@ for(let i = 0; i< 55; i++){
 stars.push(createVector(random(width),random(height)));
 }
 s = new Ship ();
+restartBtn = Button(width/2, height/2 + 70, 100, 50, "Restart");
 }
 function draw() {
   background(0);
@@ -54,6 +55,7 @@ function draw() {
     background(0);
     fill(255);
     text("You died", width/2, height/2);
+    restartBtn.show();
     
   }
 }
