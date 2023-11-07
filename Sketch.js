@@ -10,7 +10,7 @@ let clientHeight = document.getElementById('asteroids').clientHeight;
 let clientWidth = document.getElementById('asteroids').clientWidth;
 let c = createCanvas(clientWidth,clientHeight );
 c.parent('asteroids')
-  
+textSize(20);
 for(let i = 0; i<100; i++){
 asteroids.push(new Asteroid());
 }
@@ -51,7 +51,9 @@ function draw() {
       }
     }
   } else if (state == "dead") {
-    background(255, 0, 0);
+    background(0);
+    text("You died", width/2, height/2);
+    
   }
 }
 
