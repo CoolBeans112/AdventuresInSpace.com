@@ -1,18 +1,18 @@
 function Asteroid() {
 let x = 0;
 let y = 0;
-if (floor(random(3)) == 0) {
+if (floor(random(2)) == 0) {
  x = random(width/2 - 50);
 }
 else {
- x = random(width/2 + 50);
+ x = random(width/2 + 50, width);
 }  
 
-if (floor(random(3)) == 0) {
+if (floor(random(2)) == 0) {
  y = random(height/2 - 50);
 }
 else {
- y = random(height/2 + 50);
+ y = random(height/2 + 50, height);
 }  
 this.pos = createVector(x, y);
 this.vel = createVector(random(-2, 2),random(-2,2 ));
