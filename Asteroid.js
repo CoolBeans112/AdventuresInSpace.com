@@ -1,14 +1,14 @@
 function Asteroid() {
 let x = 0;
 let y = 0;
-if (floor(random(2)) == 0) {
+if (floor(random(3)) == 0) {
  x = random(width/2 - 50);
 }
 else {
  x = random(width/2 + 50);
 }  
 
-if (floor(random(2)) == 0) {
+if (floor(random(3)) == 0) {
  y = random(height/2 - 50);
 }
 else {
