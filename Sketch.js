@@ -19,7 +19,7 @@ for(let i = 0; i< 55; i++){
 stars.push(createVector(random(width),random(height)));
 }
 s = new Ship ();
-restartBtn = Button(width/2, height/2 + 70, 100, 50, "Restart");
+restartBtn = new Button(width/2, height/2 + 70, 100, 50, "Restart");
 }
 function draw() {
   background(0);
