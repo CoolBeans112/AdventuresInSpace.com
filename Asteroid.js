@@ -1,5 +1,20 @@
 function Asteroid() {
-this.pos = createVector(random(width),random(height));
+let x = 0;
+let y = 0;
+if (floor(random(2)) == 0) {
+ x = random(width/2 - 50);
+}
+else {
+ x = random(width/2 + 50);
+}  
+
+if (floor(random(2)) == 0) {
+ y = random(height/2 - 50);
+}
+else {
+ y = random(height/2 + 50);
+}  
+this.pos = createVector(x, y);
 this.vel = createVector(random(-2, 2),random(-2,2 ));
 this.r = random( 30,50);
 this.move = function() {
