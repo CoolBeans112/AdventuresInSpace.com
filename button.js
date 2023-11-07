@@ -3,7 +3,7 @@ function Button(x, y, w, h, txt) {
   this.y = y;
   this.w = w;
   this.h = h;
-  this.text = txt;
+  this.txt = txt;
 
   this.show = function() {
     fill(0);
@@ -13,7 +13,7 @@ function Button(x, y, w, h, txt) {
     rectMode(CORNER);
     fill(255);
     textAlign(CENTER);
-    text(this.text, this.x, this.y);
+    text(this.txt, this.x, this.y);
   }
   
 }
