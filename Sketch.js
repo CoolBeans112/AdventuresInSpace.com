@@ -4,6 +4,7 @@ let stars = [];
 let asteroids = [];
 let restartBtn;
 let state = "game";
+let startBtn;
 
 function setup() {
   let clientHeight = document.getElementById('asteroids').clientHeight;
@@ -20,20 +21,24 @@ function setup() {
   }
   s = new Ship ();
   restartBtn = new Button(width/2, height/2 + 70, 100, 50, "Restart");
+  state = "start";
+  startBtn = new Button(width 5, height 5, + 75 110 60, "Start");
 }
+
 
 function draw() {
   background(0);
-  if (state == "game") {
-    for(let i = 0; i< stars.length; i++){
-        ellipse(stars[i].x, stars[i].y, 4, 4);
-    }
-    function draw() {
-  background(0);
   if (state == "start") {
+   fill(225);
+    textSize(40);
+    textAlign(CENTER);
+    text("space shooter", width/2, height/2 - 20);
+  }
+  else if (state == "game") {
     for(let i = 0; i< stars.length; i++){
         ellipse(stars[i].x, stars[i].y, 4, 4);
     }
+  
     s.move();
     s.turn();
     s.edge_loop();
@@ -71,6 +76,9 @@ function draw() {
 }
 
 function mousePressed() {
+  if(state == "start" && startBtn.collides(mouseX, mouseY)) {
+  state = "game";
+  }
   if(state == "dead" && restartBtn.collides(mouseX, mouseY)) {
     for(let i = 0; i<100; i++){
       asteroids.push(new Asteroid());
@@ -86,13 +94,15 @@ function mousePressed() {
 }
 
 function keyPressed() {
-  if(key == 'w') {
+  if(key == ' ' && state == "start"){
+  state = "game";} 
+  else if(key == 'w') {
    s.is_boosting = true;
   }
-  if (key == 'a'){
+else if (key == 'a'){
     s.rot = -0.1;
   }
-  if (key == 'd'){
+else if (key == 'd'){
     s.rot = 0.1;
   }
 }
