@@ -38,8 +38,8 @@ function draw() {
       asteroids[i].show();
       asteroids[i].edge_loop();
       if (asteroids[i].hits(s)) {
-        //state = "dead";
-        break;
+        state = "dead";
+        //break;
       }
     }
 
