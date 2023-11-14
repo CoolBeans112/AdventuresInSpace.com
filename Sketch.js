@@ -28,6 +28,12 @@ function draw() {
     for(let i = 0; i< stars.length; i++){
         ellipse(stars[i].x, stars[i].y, 4, 4);
     }
+    function draw() {
+  background(0);
+  if (state == "start") {
+    for(let i = 0; i< stars.length; i++){
+        ellipse(stars[i].x, stars[i].y, 4, 4);
+    }
     s.move();
     s.turn();
     s.edge_loop();
@@ -39,7 +45,7 @@ function draw() {
       asteroids[i].edge_loop();
       if (asteroids[i].hits(s)) {
         state = "dead";
-        //break;
+        break;
       }
     }
 
