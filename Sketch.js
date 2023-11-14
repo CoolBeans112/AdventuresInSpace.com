@@ -14,6 +14,7 @@ function setup() {
   textSize(20);
   for(let i = 0; i<100; i++){
     asteroids.push(new Asteroid());
+    backround(0)
   }
 
   for(let i = 0; i< 55; i++){
